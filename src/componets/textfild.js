@@ -3,14 +3,7 @@ import TextField from '@mui/material/TextField'
 import PropTypes from 'prop-types'
 
 export default function LoginTextFields({ place, ...rest }) {
-  return (
-    <TextField
-      id="standard-basic"
-      label={place}
-      {...rest}
-      
-    />
-  )
+  return <TextField label={place} {...rest} />
 }
 
 LoginTextFields.propTypes = {

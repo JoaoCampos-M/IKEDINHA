@@ -5,7 +5,9 @@ import PropTypes from 'prop-types'
 const StyledContainer = styled('div')(() => ({
   backgroundColor: 'black',
   width: '100vw',
-  height: '100vh'
+  height: '100vh',
+  display: 'flex',
+  flexDirection: 'column'
 }))
 export function Drawer({ children }) {
   return <StyledContainer>{children}</StyledContainer>
