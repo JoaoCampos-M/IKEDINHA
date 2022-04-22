@@ -1,16 +1,17 @@
 import React from 'react'
 import LoginTextFields from '../../componets/textfild'
 import { Drawer } from '../../componets/Drawer'
-import { Entrar } from '../../componets/buttons'
-function Login() {
+import { Go } from '../../componets/buttons'
+function Cadastro() {
   return (
     <Drawer>
       <h1 style={{ color: 'white', textAlign: 'center', marginTop: '100' }}>
-        Login
+        Cadastro
       </h1>
-      <LoginTextFields place="Nome" sx={{ color: 'text.primary' }} />
+      <LoginTextFields place="Email" />
       <LoginTextFields place="Senha" />
-      <Entrar>Entrar</Entrar>
+      <LoginTextFields place="Confirme sua senha" />
+      <Go>Entrar</Go>
       <p style={{ color: 'white', textAlign: 'center' }}>
         Quer meter o Shape ?
       </p>
@@ -19,4 +20,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Cadastro

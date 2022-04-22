@@ -18,5 +18,4 @@ const Go = styled('button')(() => ({
   width: 'max-content',
   margin: 'auto'
 }))
-
 export { Entrar, Go }

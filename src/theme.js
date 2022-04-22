@@ -5,7 +5,7 @@ export let theme = createTheme({
     MuiInput: {
       input: {
         '&::placeholder': {
-          color: 'gray'
+          color: 'white'
         },
         color: 'white' // if you also want to change the color of the input, this is the prop you'd use
       }
@@ -13,7 +13,7 @@ export let theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#002984'
+      main: '#FFFFFF'
     }
   }
 })
