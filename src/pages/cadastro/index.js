@@ -1,21 +1,41 @@
 import React from 'react'
 import { LoginTextFields } from '../../componets/Textfields'
 import { Drawer } from '../../componets/Drawer'
-import { Go } from '../../componets/buttons'
+import { LoginBox, LoginFormBox } from '../../componets/Boxes'
+import { Go } from '../../componets/Buttons'
+import { Link } from 'react-router-dom'
 function Cadastro() {
   return (
     <Drawer>
-      <h1 style={{ color: 'white', textAlign: 'center', marginTop: '100' }}>
-        Cadastro
-      </h1>
-      <LoginTextFields place="Email" />
-      <LoginTextFields place="Senha" />
-      <LoginTextFields place="Confirme sua senha" />
-      <Go>Go</Go>
-      <p style={{ color: 'white', textAlign: 'center' }}>
-        Ja faz parte do Team Ikeda?
-      </p>
-      <p style={{ color: 'white', textAlign: 'center' }}>Login</p>
+      <LoginBox>
+        <h1 style={{ color: 'white', textAlign: 'center', fontSize: '3rem' }}>
+          Login
+        </h1>
+        <LoginFormBox>
+          <div
+            style={{
+              // backgroundColor: 'blue',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-evenly'
+            }}
+          >
+            <LoginTextFields place="Email" />
+            <LoginTextFields place="Senha" />
+            <LoginTextFields place="Repita a senha" />
+          </div>
+          <Go sx={{ margin: '0.3rem auto' }}>GO!!</Go>
+        </LoginFormBox>
+        <p style={{ color: 'white', textAlign: 'center', margin: '0.5rem' }}>
+          Já faz parte do Team Ikeda?
+        </p>
+        <Link
+          to="/login"
+          style={{ color: 'white', textAlign: 'center', margin: '0.5rem' }}
+        >
+          Voltar ao Login
+        </Link>
+      </LoginBox>
     </Drawer>
   )
 }

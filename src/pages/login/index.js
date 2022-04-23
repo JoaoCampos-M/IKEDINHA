@@ -3,6 +3,7 @@ import { LoginTextFields } from '../../componets/Textfields'
 import { Drawer } from '../../componets/Drawer'
 import { Entrar } from '../../componets/Buttons'
 import { LoginFormBox, LoginBox } from '../../componets/Boxes'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
@@ -25,10 +26,15 @@ function Login() {
           </div>
           <Entrar sx={{ margin: '0.3rem auto' }}>Entrar</Entrar>
         </LoginFormBox>
-        <p style={{ color: 'white', textAlign: 'center' }}>
+        <p style={{ color: 'white', textAlign: 'center', margin: '0.5rem' }}>
           Quer meter o Shape ?
         </p>
-        <p style={{ color: 'white', textAlign: 'center' }}>Cadastre-se</p>
+        <Link
+          to="/cadastro"
+          style={{ color: 'white', textAlign: 'center', margin: '0.5rem' }}
+        >
+          Cadastre-se
+        </Link>
       </LoginBox>
     </Drawer>
   )

@@ -12,7 +12,7 @@ const LoginBox = styled(Box)(() => ({
 const LoginFormBox = styled(Box)(() => ({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-between',
+  justifyContent: 'space-evenly',
   padding: '5vh 0',
   margin: 'auto 0',
   height: '60vh',
