@@ -1,5 +1,5 @@
 import React from 'react'
-import { LoginTextFields } from '../../componets/textfields'
+import { LoginTextFields } from '../../componets/Textfields'
 import { Drawer } from '../../componets/Drawer'
 import { Go } from '../../componets/buttons'
 function Cadastro() {

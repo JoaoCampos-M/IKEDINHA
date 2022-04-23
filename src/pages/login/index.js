@@ -1,7 +1,7 @@
 import React from 'react'
-import { LoginTextFields } from '../../componets/textfields'
+import { LoginTextFields } from '../../componets/Textfields'
 import { Drawer } from '../../componets/Drawer'
-import { Entrar } from '../../componets/buttons'
+import { Entrar } from '../../componets/Buttons'
 import { LoginFormBox, LoginBox } from '../../componets/Boxes'
 
 function Login() {
