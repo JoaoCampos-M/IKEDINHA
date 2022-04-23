@@ -1,4 +1,4 @@
-import { styled } from '@material-ui/styles'
+import { styled } from '@mui/material/styles'
 const Entrar = styled('button')(() => ({
   borderRadius: '1.5rem',
   border: 'none',
@@ -6,7 +6,7 @@ const Entrar = styled('button')(() => ({
   textTransform: 'uppercase',
   fontSize: '1.2rem',
   width: 'max-content',
-  margin: 'auto'
+  margin: '0px auto'
 }))
 
 const Go = styled('button')(() => ({
@@ -16,6 +16,6 @@ const Go = styled('button')(() => ({
   textTransform: 'uppercase',
   fontSize: '1.2rem',
   width: 'max-content',
-  margin: 'auto'
+  margin: '0px auto'
 }))
 export { Entrar, Go }
