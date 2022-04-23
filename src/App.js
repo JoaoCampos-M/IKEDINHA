@@ -1,7 +1,6 @@
-import { ThemeProvider } from '@material-ui/styles'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 import React from 'react'
 import Rotas from './routes'
-import { createTheme } from '@mui/material/styles'
 
 export const theme = createTheme({
   palette: {

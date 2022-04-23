@@ -12,35 +12,26 @@ const StyledTextField = styled(TextField)(() => ({
     color: 'white'
   },
   '& label.Mui-focused': {
-    color: 'green'
+    color: 'white'
   },
   '& .MuiInput-underline:after': {
-    borderBottomColor: 'green'
+    borderBottomColor: 'white'
   },
   '& .MuiOutlinedInput-root': {
     '& fieldset': {
-      borderColor: 'red'
+      borderColor: 'white'
     },
     '&:hover fieldset': {
-      borderColor: 'yellow'
+      borderColor: 'white'
     },
     '&.Mui-focused fieldset': {
-      borderColor: 'green'
+      borderColor: 'white'
     }
   }
 }))
 
 export default function LoginTextFields({ place, ...rest }) {
-  return (
-    <StyledTextField
-      variant="filled"
-      focused
-      color="primary"
-      label={place}
-      {...rest}
-      style={{ '& input': { color: 'white' } }}
-    />
-  )
+  return <StyledTextField variant="filled" label={place} {...rest} />
 }
 
 LoginTextFields.propTypes = {
