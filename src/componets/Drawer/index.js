@@ -17,7 +17,7 @@ const MobileBox = styled(Box)(({ theme }) => ({
     margin: '0px auto',
     height: '100vh'
   },
-  backgroundColor: 'purple',
+  backgroundColor: 'black',
   height: '100vh'
 }))
 export function Drawer({ children }) {
