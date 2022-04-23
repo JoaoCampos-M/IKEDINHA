@@ -11,11 +11,11 @@ function Cadastro() {
       <LoginTextFields place="Email" />
       <LoginTextFields place="Senha" />
       <LoginTextFields place="Confirme sua senha" />
-      <Go>Entrar</Go>
+      <Go>Go</Go>
       <p style={{ color: 'white', textAlign: 'center' }}>
-        Quer meter o Shape ?
+        Ja faz parte do Team Ikeda?
       </p>
-      <p style={{ color: 'white', textAlign: 'center' }}>Cadastre-se</p>
+      <p style={{ color: 'white', textAlign: 'center' }}>Login</p>
     </Drawer>
   )
 }
