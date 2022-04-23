@@ -8,7 +8,7 @@ function Login() {
       <h1 style={{ color: 'white', textAlign: 'center', marginTop: '100' }}>
         Login
       </h1>
-      <LoginTextFields place="Nome" sx={{ color: 'text.primary' }} />
+      <LoginTextFields place="Nome" />
       <LoginTextFields place="Senha" />
       <Entrar>Entrar</Entrar>
       <p style={{ color: 'white', textAlign: 'center' }}>
