@@ -18,4 +18,15 @@ const Go = styled('button')(() => ({
   width: 'max-content',
   margin: '0px auto'
 }))
-export { Entrar, Go }
+
+const Comentar = styled('button')(() => ({
+  borderRadius: '1.5rem',
+  border: 'none',
+  padding: '0.75rem 4.5rem ',
+  textTransform: 'uppercase',
+  fontSize: '1.2rem',
+  width: 'max-content',
+  margin: '0px auto'
+}))
+
+export { Entrar, Go, Comentar }

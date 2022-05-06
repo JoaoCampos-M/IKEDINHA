@@ -9,7 +9,7 @@ function Cadastro() {
     <Drawer>
       <LoginBox>
         <h1 style={{ color: 'white', textAlign: 'center', fontSize: '3rem' }}>
-          Login
+          Cadastro
         </h1>
         <LoginFormBox>
           <div
