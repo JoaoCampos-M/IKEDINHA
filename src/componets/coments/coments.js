@@ -5,11 +5,11 @@ import Divider from '@mui/material/Divider'
 import ListItemText from '@mui/material/ListItemText'
 import ListItemAvatar from '@mui/material/ListItemAvatar'
 import Avatar from '@mui/material/Avatar'
-import Typography from '@mui/material/Typography'
+import { WhiteTypography } from '../Typhography'
 
 export default function AlignItemsList() {
   return (
-    <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+    <List sx={{ width: '100%', bgcolor: 'black' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
@@ -18,14 +18,14 @@ export default function AlignItemsList() {
           primary="Brunch this weekend?"
           secondary={
             <React.Fragment>
-              <Typography
+              <WhiteTypography
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
-                color="text.primary"
+                color="white"
               >
                 Ali Connors
-              </Typography>
+              </WhiteTypography>
               {" — I'll be in your neighborhood doing errands this…"}
             </React.Fragment>
           }
@@ -40,14 +40,14 @@ export default function AlignItemsList() {
           primary="Summer BBQ"
           secondary={
             <React.Fragment>
-              <Typography
+              <WhiteTypography
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
-                color="text.primary"
+                color="white"
               >
                 to Scott, Alex, Jennifer
-              </Typography>
+              </WhiteTypography>
               {" — Wish I could come, but I'm out of town this…"}
             </React.Fragment>
           }
@@ -62,14 +62,14 @@ export default function AlignItemsList() {
           primary="Oui Oui"
           secondary={
             <React.Fragment>
-              <Typography
+              <WhiteTypography
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
-                color="text.primary"
+                color="white"
               >
                 Sandra Adams
-              </Typography>
+              </WhiteTypography>
               {' — Do you have Paris recommendations? Have you ever…'}
             </React.Fragment>
           }
