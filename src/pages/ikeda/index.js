@@ -58,6 +58,7 @@ function HomeT() {
             </Button>
           </CardActions>
         </Card>
+        
 
         <div>
           <div
@@ -74,9 +75,6 @@ function HomeT() {
             </IconButton>
           </div>
         </div>
-        <p style={{ color: 'white', textAlign: 'center', margin: '0.5rem' }}>
-          Abacate
-        </p>
       </PageContainer>
     </Drawer>
   )

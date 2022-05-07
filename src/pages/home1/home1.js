@@ -6,7 +6,7 @@ import { LoginFormBox, LoginBox } from '../../componets/Boxes'
 import { Link } from 'react-router-dom'
 import { k } from '../../img/k.png'
 
-function Login() {
+function Home1() {
   return (
     <Drawer>
       <LoginBox>
@@ -42,4 +42,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Home1
