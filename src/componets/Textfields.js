@@ -24,6 +24,21 @@ const StyledTextField = styled(TextField)(() => ({
     '&::before': {
       borderBottom: '2px solid white'
     }
+  },
+
+  '& .MuiInput-underline:after': {
+    borderBottomColor: 'white'
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: 'white'
+    },
+    '&:hover fieldset': {
+      borderColor: 'white'
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: 'white'
+    }
   }
 }))
 
@@ -31,8 +46,15 @@ function LoginTextFields({ place, ...rest }) {
   return <StyledTextField variant="filled" label={place} {...rest} />
 }
 
+function CommentTextField({ place, ...rest }) {
+  return <StyledTextField label={place} {...rest} />
+}
+
 LoginTextFields.propTypes = {
   place: PropTypes.string
 }
+CommentTextField.propTypes = {
+  place: PropTypes.string
+}
 
-export { LoginTextFields }
+export { LoginTextFields, CommentTextField }
