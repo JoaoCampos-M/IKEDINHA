@@ -1,31 +1,17 @@
 import React from 'react'
-import { styled } from '@mui/material/styles'
 import { Drawer } from '../../componets/Drawer'
 import { IconButton } from '@mui/material'
 import { WhiteTypography } from '../../componets/Typhography'
-import Box from '@mui/material/Box'
+import { PageContainer } from '../../componets/Boxes'
 import { Send } from '@mui/icons-material'
-
+import { StyledCardMedia } from '../../componets/Cards'
 import { CommentTextField } from '../../componets/Textfields'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 
 function HomeT() {
-  const PageContainer = styled(Box)(() => ({
-    height: '100%',
-    width: '100%',
-    padding: '0.2rem'
-  }))
-
-  const StyledCardMedia = styled(CardMedia)(() => ({
-    border: '1px solid white',
-    borderRadius: '1rem',
-    backgroundColor: 'black',
-    minHeight: '256px'
-  }))
   return (
     <Drawer style={{ backgroundColor: 'blue' }}>
       <PageContainer style={{ backgroundColor: 'black' }}>
@@ -58,7 +44,6 @@ function HomeT() {
             </Button>
           </CardActions>
         </Card>
-        
 
         <div>
           <div

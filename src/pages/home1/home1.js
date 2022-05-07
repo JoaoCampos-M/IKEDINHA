@@ -4,7 +4,7 @@ import { Drawer } from '../../componets/Drawer'
 import { Entrar } from '../../componets/Buttons'
 import { LoginFormBox, LoginBox } from '../../componets/Boxes'
 import { Link } from 'react-router-dom'
-import { k } from '../../img/k.png'
+import k from '../../img/k.png'
 
 function Home1() {
   return (
