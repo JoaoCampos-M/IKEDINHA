@@ -59,17 +59,14 @@ export default function SimpleBottomNavigation() {
         >
           <BottomNavigationAction
             style={{ color: 'white' }}
-            label="Home"
             icon={<HomeIcon />}
           />
           <BottomNavigationAction
             style={{ color: 'white' }}
-            label="Mentoria"
             icon={<FitnessCenterIcon />}
           />
           <BottomNavigationAction
             style={{ color: 'white' }}
-            label="Perfil"
             icon={<PersonIcon />}
           />
         </BottomNavigation>

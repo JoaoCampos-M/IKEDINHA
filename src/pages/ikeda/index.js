@@ -5,13 +5,12 @@ import { IconButton } from '@mui/material'
 import { WhiteTypography } from '../../componets/Typhography'
 import Box from '@mui/material/Box'
 import { Send } from '@mui/icons-material'
-
 import { CommentTextField } from '../../componets/Textfields'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
-import Button from '@mui/material/Button'
+import AlignItemsList from '../../componets/coments/coments'
 
 function HomeT() {
   const PageContainer = styled(Box)(() => ({
@@ -52,14 +51,8 @@ function HomeT() {
               6,000 species, ranging across all continents except Antarctica
             </WhiteTypography>
           </CardContent>
-          <CardActions>
-            <Button size="small" variant="outlined">
-              Download
-            </Button>
-          </CardActions>
+          <CardActions></CardActions>
         </Card>
-        
-
         <div>
           <div
             style={{
@@ -74,6 +67,9 @@ function HomeT() {
               <Send style={{ color: 'white' }} />
             </IconButton>
           </div>
+        </div>
+        <div>
+          <AlignItemsList />
         </div>
       </PageContainer>
     </Drawer>
