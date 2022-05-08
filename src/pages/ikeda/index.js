@@ -1,17 +1,31 @@
 import React from 'react'
+import { styled } from '@mui/material/styles'
 import { Drawer } from '../../componets/Drawer'
 import { IconButton } from '@mui/material'
 import { WhiteTypography } from '../../componets/Typhography'
-import { PageContainer } from '../../componets/Boxes'
+import Box from '@mui/material/Box'
 import { Send } from '@mui/icons-material'
-import { StyledCardMedia } from '../../componets/Cards'
 import { CommentTextField } from '../../componets/Textfields'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
 import AlignItemsList from '../../componets/coments/coments'
+import AccountMenu from '../../componets/menu/menu'
 
 function HomeT() {
+  const PageContainer = styled(Box)(() => ({
+    height: '100%',
+    width: '100%',
+    padding: '0.2rem'
+  }))
+
+  const StyledCardMedia = styled(CardMedia)(() => ({
+    border: '1px solid white',
+    borderRadius: '1rem',
+    backgroundColor: 'black',
+    minHeight: '256px'
+  }))
   return (
     <Drawer style={{ backgroundColor: 'blue' }}>
       <PageContainer style={{ backgroundColor: 'black' }}>
@@ -48,15 +62,16 @@ function HomeT() {
             }}
           >
             <CommentTextField size="small" place={'Digite um comentário'} end />
-            <IconButton
-              style={{ backgroundColor: '	#404040', margin: '0 0.4rem' }}
-            >
+            <IconButton style={{ backgroundColor: '	#000000' }}>
               <Send style={{ color: 'white' }} />
             </IconButton>
           </div>
         </div>
         <div>
           <AlignItemsList />
+        </div>
+        <div style={{ backgroundColor: 'black', position: 'relative' }}>
+          <AccountMenu />
         </div>
       </PageContainer>
     </Drawer>

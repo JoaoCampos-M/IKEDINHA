@@ -1,15 +1,10 @@
 import * as React from 'react'
-
-import BottomNavigation from '@mui/material/BottomNavigation'
-import BottomNavigationAction from '@mui/material/BottomNavigationAction'
-import HomeIcon from '@mui/icons-material/Home'
-import PersonIcon from '@mui/icons-material/Person'
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter'
 import { Drawer } from '../../componets/Drawer'
 import { HomeBox } from '../../componets/Boxes'
 import CssBaseline from '@mui/material/CssBaseline'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
+import AccountMenu from '../../componets/menu/menu'
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0)
 
@@ -49,27 +44,9 @@ export default function SimpleBottomNavigation() {
             </Box>
           </Container>
         </React.Fragment>
-        <BottomNavigation
-          style={{ backgroundColor: 'black', marginTop: '100' }}
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue)
-          }}
-        >
-          <BottomNavigationAction
-            style={{ color: 'white' }}
-            icon={<HomeIcon />}
-          />
-          <BottomNavigationAction
-            style={{ color: 'white' }}
-            icon={<FitnessCenterIcon />}
-          />
-          <BottomNavigationAction
-            style={{ color: 'white' }}
-            icon={<PersonIcon />}
-          />
-        </BottomNavigation>
+        <footer>
+          <AccountMenu />
+        </footer>
       </HomeBox>
     </Drawer>
   )

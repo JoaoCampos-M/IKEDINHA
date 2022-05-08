@@ -18,14 +18,7 @@ export default function AlignItemsList() {
           primary="Brunch this weekend?"
           secondary={
             <React.Fragment>
-              <WhiteTypography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="white"
-              >
-                Ali Connors
-              </WhiteTypography>
+              <WhiteTypography>Ali Connors</WhiteTypography>
               {" — I'll be in your neighborhood doing errands this…"}
             </React.Fragment>
           }
@@ -40,14 +33,7 @@ export default function AlignItemsList() {
           primary="Summer BBQ"
           secondary={
             <React.Fragment>
-              <WhiteTypography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="white"
-              >
-                to Scott, Alex, Jennifer
-              </WhiteTypography>
+              <WhiteTypography>to Scott, Alex, Jennifer</WhiteTypography>
               {" — Wish I could come, but I'm out of town this…"}
             </React.Fragment>
           }
@@ -62,14 +48,7 @@ export default function AlignItemsList() {
           primary="Oui Oui"
           secondary={
             <React.Fragment>
-              <WhiteTypography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="white"
-              >
-                Sandra Adams
-              </WhiteTypography>
+              <WhiteTypography>Sandra Adams</WhiteTypography>
               {' — Do you have Paris recommendations? Have you ever…'}
             </React.Fragment>
           }

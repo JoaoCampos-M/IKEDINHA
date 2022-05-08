@@ -7,6 +7,7 @@ import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
+import AccountMenu from '../../componets/menu/menu'
 
 function Item(props) {
   const { sx, ...other } = props
@@ -105,6 +106,9 @@ export default function FlexWrap() {
           <iframe></iframe>
         </Item>
       </Box>
+      <footer>
+        <AccountMenu />
+      </footer>
     </div>
   )
 }
